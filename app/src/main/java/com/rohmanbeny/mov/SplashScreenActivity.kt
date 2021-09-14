@@ -6,6 +6,10 @@ import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import com.rohmanbeny.mov.onboarding.OnboardingOneActivity
 
+/*
+    This is Splash Screen
+*/
+
 class SplashScreenActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
