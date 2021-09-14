@@ -1,7 +1,7 @@
 # MOV APPS
 Project Class BWA Full Stack Android Development
 
-##Fiture
+## Fiture
 1. SplashScreen
 2. OnBoarding
 3. Sign In
@@ -14,3 +14,6 @@ Project Class BWA Full Stack Android Development
 10. Ticket Detail
 11. Pop Up QR Code
 12. Setting
+
+## Tekhnologi
+1. Firebase
