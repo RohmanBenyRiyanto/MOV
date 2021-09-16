@@ -25,3 +25,7 @@ Project Class BWA Full Stack Android Development
 
 2. Feature
 <img alt="Feature Graphic MOV Apps" src="https://user-images.githubusercontent.com/72520643/133613656-f4522aba-866e-4d5f-8baa-4aea32b53630.png" width="924" height="400" align="center"/>
+
+3. ScreenShot
+
+<img alt="satu" src="https://user-images.githubusercontent.com/72520643/133615125-720ef6fb-f1a6-499b-9d66-db82dc7585bf.png" width="360" height="641"/> <img alt="dua" src="https://user-images.githubusercontent.com/72520643/133615166-8ada54cc-90d0-42c7-845d-1519fe7da0ad.png" width="360" height="641"/>
