@@ -15,7 +15,8 @@ class SuccesBeliActivity : AppCompatActivity() {
         btn_home.setOnClickListener {
             finishAffinity()
 
-            val intent = Intent(this, HomeActivity::class.java)
+            val intent = Intent(this@SuccesBeliActivity,
+                HomeActivity::class.java)
             startActivity(intent)
         }
     }

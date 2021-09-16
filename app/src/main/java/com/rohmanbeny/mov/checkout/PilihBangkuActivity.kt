@@ -63,6 +63,10 @@ class PilihBangkuActivity : AppCompatActivity() {
                 .putExtra("data", datalist)
             startActivity(intent)
         }
+        iv_close.setOnClickListener {
+            finish()
+        }
+
     }
 
     private fun beliTiket(total: Int) {

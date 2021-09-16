@@ -9,6 +9,8 @@ import com.rohmanbeny.mov.R
 import com.rohmanbeny.mov.sign.signin.User
 import com.rohmanbeny.mov.utils.Preferences
 import kotlinx.android.synthetic.main.activity_sign_up.*
+import kotlinx.android.synthetic.main.activity_sign_up.iv_close
+import kotlinx.android.synthetic.main.activity_tiket.*
 
 class SignUpActivity : AppCompatActivity() {
 
@@ -34,6 +36,10 @@ class SignUpActivity : AppCompatActivity() {
 
         preferences = Preferences(this)
 
+        iv_close.setOnClickListener {
+            finish()
+        }
+
         btn_lanjutkan.setOnClickListener{
             sUsername = et_username.text.toString()
             sPassword = et_password.text.toString()
@@ -53,9 +59,31 @@ class SignUpActivity : AppCompatActivity() {
             }else if(sEmail.equals("")){
                 et_email.error = "Email wajib diisi"
                 et_email.requestFocus()
-            }else{
-                saveUsername(sUsername, sPassword, sNama, sEmail, sSaldo)
+            } else {
+
+                var statusUsername = sUsername.indexOf(".")
+                if (statusUsername >=0) {
+                    et_username.error = "Silahkan tulis Username Anda tanpa ."
+                    et_username.requestFocus()
+                } else {
+                    saveUser(sUsername, sPassword, sNama, sEmail)
+                }
+
             }
+        }
+    }
+
+    private fun saveUser(sUsername: String, sPassword: String, sNama: String, sEmail: String) {
+
+        val user = User()
+        user.email = sEmail
+        user.username = sUsername
+        user.nama = sNama
+        user.password = sPassword
+
+        if (sUsername != null) {
+            checkUsername(sUsername, user)
+
         }
     }
 
@@ -87,10 +115,10 @@ class SignUpActivity : AppCompatActivity() {
                     preferences.setValues("email", data.email.toString())
                     preferences.setValues("status", "1")
 
-                    val signUp2 = Intent(this@SignUpActivity, SignUpPhotoScreenActivity::class.java)
-                        .putExtra( "data", data)
+                    val signUp2 = Intent(this@SignUpActivity,
+                        SignUpPhotoScreenActivity::class.java).putExtra( "data", data)
                     startActivity(signUp2)
-                }else{
+                } else{
                     Toast.makeText(this@SignUpActivity, "Username Telah digunakan", Toast.LENGTH_SHORT).show()
                 }
             }
@@ -101,4 +129,3 @@ class SignUpActivity : AppCompatActivity() {
         })
     }
 }
-

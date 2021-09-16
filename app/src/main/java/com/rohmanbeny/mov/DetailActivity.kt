@@ -12,6 +12,11 @@ import com.rohmanbeny.mov.home.dashboard.PlaysAdapter
 import com.rohmanbeny.mov.model.Film
 import com.rohmanbeny.mov.model.Plays
 import kotlinx.android.synthetic.main.activity_detail.*
+import kotlinx.android.synthetic.main.activity_detail.iv_close
+import kotlinx.android.synthetic.main.activity_detail.iv_poster
+import kotlinx.android.synthetic.main.activity_detail.tv_genre
+import kotlinx.android.synthetic.main.activity_detail.tv_rate
+import kotlinx.android.synthetic.main.activity_tiket.*
 
 class DetailActivity : AppCompatActivity() {
 
@@ -43,6 +48,9 @@ class DetailActivity : AppCompatActivity() {
         btn_pilih_bangku.setOnClickListener{
             var intent = Intent(this@DetailActivity, PilihBangkuActivity::class.java).putExtra("data", data)
             startActivity(intent)
+        }
+        iv_close.setOnClickListener {
+            finish()
         }
     }
 

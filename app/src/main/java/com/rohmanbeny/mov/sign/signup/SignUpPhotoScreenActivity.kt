@@ -1,13 +1,9 @@
 package com.rohmanbeny.mov.sign.signup
 
-import android.annotation.SuppressLint
-import android.app.Activity
 import android.app.ProgressDialog
 import android.content.Intent
-import android.graphics.Bitmap
 import android.net.Uri
 import android.os.Bundle
-import android.provider.MediaStore
 import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -20,13 +16,14 @@ import com.google.firebase.storage.StorageReference
 import com.karumi.dexter.PermissionToken
 import com.karumi.dexter.listener.PermissionDeniedResponse
 import com.karumi.dexter.listener.PermissionGrantedResponse
-import com.karumi.dexter.listener.PermissionRequest
 import com.karumi.dexter.listener.single.PermissionListener
-import com.rohmanbeny.mov.home.HomeActivity
 import com.rohmanbeny.mov.R
+import com.rohmanbeny.mov.home.HomeActivity
 import com.rohmanbeny.mov.sign.signin.User
 import com.rohmanbeny.mov.utils.Preferences
 import kotlinx.android.synthetic.main.activity_sign_up_photoscreen.*
+import kotlinx.android.synthetic.main.activity_sign_up_photoscreen.iv_close
+import kotlinx.android.synthetic.main.activity_tiket.*
 import java.util.*
 
 class SignUpPhotoScreenActivity : AppCompatActivity(), PermissionListener {
@@ -79,8 +76,12 @@ class SignUpPhotoScreenActivity : AppCompatActivity(), PermissionListener {
         btn_home.setOnClickListener {
             finishAffinity()
 
-            var goHome = Intent(this@SignUpPhotoScreenActivity, HomeActivity::class.java)
+            var goHome = Intent(this@SignUpPhotoScreenActivity,
+                HomeActivity::class.java)
             startActivity(goHome)
+        }
+        iv_close.setOnClickListener {
+            finish()
         }
 
         btn_save.setOnClickListener {
@@ -117,13 +118,48 @@ class SignUpPhotoScreenActivity : AppCompatActivity(), PermissionListener {
         }
     }
 
-    override fun onPermissionGranted(response: PermissionGrantedResponse?) {
-        Intent(MediaStore.ACTION_IMAGE_CAPTURE).also {
-            takePictureIntent ->
-            takePictureIntent.resolveActivity(packageManager)?.also{
-                startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE )
+    private fun saveToFirebase(url: String) {
+
+        mFirebaseDatabase.child(user.username!!).addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+
+                user.url = url
+                mFirebaseDatabase.child(user.username!!).setValue(user)
+
+                preferences.setValues("nama", user.nama.toString())
+                preferences.setValues("user", user.username.toString())
+                preferences.setValues("saldo", "")
+                preferences.setValues("url", "")
+                preferences.setValues("email", user.email.toString())
+                preferences.setValues("status", "1")
+                preferences.setValues("url", url)
+
+                finishAffinity()
+                val intent = Intent(this@SignUpPhotoScreenActivity,
+                    HomeActivity::class.java)
+                startActivity(intent)
+
             }
-        }
+
+            override fun onCancelled(error: DatabaseError) {
+                Toast.makeText(this@SignUpPhotoScreenActivity, ""+error.message, Toast.LENGTH_LONG).show()
+            }
+        })
+    }
+
+
+    override fun onPermissionGranted(response: PermissionGrantedResponse?) {
+        //To change body of created functions use File | Settings | File Templates.
+//        Intent(MediaStore.ACTION_IMAGE_CAPTURE).also { takePictureIntent ->
+//            takePictureIntent.resolveActivity(packageManager)?.also {
+//                startActivityForResult(takePictureIntent, REQUEST_IMAGE_CAPTURE)
+//            }
+//        }
+
+        ImagePicker.with(this)
+            .cameraOnly()	//User can only capture image using Camera
+            .start()
+
     }
 
     override fun onPermissionDenied(response: PermissionDeniedResponse?) {
@@ -135,26 +171,49 @@ class SignUpPhotoScreenActivity : AppCompatActivity(), PermissionListener {
     }
 
     override fun onPermissionRationaleShouldBeShown(
-        permission: PermissionRequest?,
+        permission: com.karumi.dexter.listener.PermissionRequest?,
         token: PermissionToken?
     ) {
-
+        //To change body of created functions use File | Settings | File Templates.
     }
 
-    @SuppressLint("MissingSuperCall")
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == Activity.RESULT_OK) {
-            var bitmap = data?.extras?.get("data") as Bitmap
-            statusAdd = true
+//    @SuppressLint("MissingSuperCall")
+//    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+//        if (requestCode == REQUEST_IMAGE_CAPTURE && resultCode == RESULT_OK) {
+//            var bitmap = data?.extras?.get("data") as Bitmap
+//            statusAdd = true
+//
+//            filePath = data.getData()!!
+//
+//            Glide.with(this)
+//                .load(bitmap)
+//                .apply(RequestOptions.circleCropTransform())
+//                .into(iv_profile)
+//
+//            btn_save.visibility = View.VISIBLE
+//            iv_add.setImageResource(R.drawable.ic_btn_delete)
+//        }
+//    }
 
-            filePath = data.getData()!!
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (resultCode == RESULT_OK) {
+            //Image Uri will not be null for RESULT_OK
+            statusAdd = true
+            filePath = data?.data!!
+
             Glide.with(this)
-                .load(bitmap)
+                .load(filePath)
                 .apply(RequestOptions.circleCropTransform())
                 .into(iv_profile)
 
             btn_save.visibility = View.VISIBLE
             iv_add.setImageResource(R.drawable.ic_btn_delete)
+
+        } else if (resultCode == ImagePicker.RESULT_ERROR) {
+            Toast.makeText(this, ImagePicker.getError(data), Toast.LENGTH_SHORT).show()
+        } else {
+            Toast.makeText(this, "Task Cancelled", Toast.LENGTH_SHORT).show()
         }
     }
 }

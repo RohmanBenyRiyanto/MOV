@@ -44,6 +44,7 @@
     <string name="daftar">Daftar</string>
     <string name="daftar_akun_baru">Daftar Akun Baru</string>
     <string name="aploud_nanti">Aploud Nanti</string>
+    <string name="totalbalance">Total Balance</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
