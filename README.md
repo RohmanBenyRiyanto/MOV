@@ -20,6 +20,8 @@ Project Class BWA Full Stack Android Development
 
 ## Preview
 
-![Icon MOV Apps Playstore](https://user-images.githubusercontent.com/72520643/133613573-e6f5a3dc-9be5-4e05-91c5-7cca62be9036.png "Icon" {width=150px height=150px})
+1. Icon
+<img alt="Icon MOV Apps" src="https://user-images.githubusercontent.com/72520643/133613573-e6f5a3dc-9be5-4e05-91c5-7cca62be9036.png" width="150" height="150" align="center"/>
 
-![Feature Graphic MOV Apps](https://user-images.githubusercontent.com/72520643/133613656-f4522aba-866e-4d5f-8baa-4aea32b53630.png "Feature" {width=724px height=200px})
+2. Feature
+<img alt="Feature Graphic MOV Apps" src="https://user-images.githubusercontent.com/72520643/133613656-f4522aba-866e-4d5f-8baa-4aea32b53630.png" width="924" height="400" align="center"/>
