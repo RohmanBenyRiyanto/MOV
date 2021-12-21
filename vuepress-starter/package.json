@@ -1,0 +1,13 @@
+{
+  "name": "docs",
+  "version": "1.0.0",
+  "description": "documentation mobile apps MOV PT.Samsan Tech",
+  "main": "docs",
+  "repository": "https://github.com/RohmanBenyRiyanto/MOV.git",
+  "author": "Rohman Beny Riyanto",
+  "license": "-",
+  "private": false,
+  "devDependencies": {
+    "vuepress": "^1.8.3"
+  }
+}
