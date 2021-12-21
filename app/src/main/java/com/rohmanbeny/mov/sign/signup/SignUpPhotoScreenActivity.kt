@@ -117,9 +117,7 @@ class SignUpPhotoScreenActivity : AppCompatActivity(), PermissionListener {
             }
         }
     }
-
     private fun saveToFirebase(url: String) {
-
         mFirebaseDatabase.child(user.username!!).addValueEventListener(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
 

@@ -2,6 +2,7 @@ package com.rohmanbeny.mov.home.dashboard
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -44,14 +45,16 @@ class DashboardFragment : Fragment() {
         mDatabase = FirebaseDatabase.getInstance().getReference("Film")
 
         tv_nama.setText(preferences.getValues("nama"))
-        if(preferences.getValues("saldo").equals("")) {
-            curenccy(preferences.getValues("saldo")!!.toDouble(),tv_saldo)
+        if (!preferences.getValues("saldo").equals("")){
+            curency(preferences.getValues("saldo")!!.toDouble(), tv_saldo)
         }
 
         Glide.with(this)
             .load(preferences.getValues("url"))
             .apply(RequestOptions.circleCropTransform())
             .into(iv_profile)
+
+        Log.v("tamvan", "url "+preferences.getValues("url"))
 
         now_playing.layoutManager = LinearLayoutManager(context, LinearLayoutManager.HORIZONTAL,false)
         rv_coming_soon.layoutManager = LinearLayoutManager(context)
@@ -85,7 +88,7 @@ class DashboardFragment : Fragment() {
         })
     }
 
-    private fun  curenccy(harga : Double, textView : TextView) {
+    private fun  curency(harga : Double, textView : TextView) {
         val localID = Locale("in", "ID")
         val format = NumberFormat.getCurrencyInstance(localID)
         textView.setText(format.format(harga))

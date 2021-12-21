@@ -61,7 +61,7 @@ class SignUpActivity : AppCompatActivity() {
                 et_email.requestFocus()
             } else {
 
-                var statusUsername = sUsername.indexOf(".")
+                val statusUsername = sUsername.indexOf(".")
                 if (statusUsername >=0) {
                     et_username.error = "Silahkan tulis Username Anda tanpa ."
                     et_username.requestFocus()
@@ -87,19 +87,6 @@ class SignUpActivity : AppCompatActivity() {
         }
     }
 
-    private fun saveUsername(sUsername: String, sPassword: String, sNama: String, sEmail: String, sSaldo: String) {
-        val user = User()
-        user.username = sUsername
-        user.password = sPassword
-        user.nama = sNama
-        user.email = sEmail
-        user.saldo = sSaldo
-
-        if(sUsername != null){
-            checkUsername(sUsername, user)
-        }
-    }
-
     private fun checkUsername(iUsername: String, data: User) {
         mDatabaseReference.child(iUsername).addListenerForSingleValueEvent(object : ValueEventListener {
             override fun onDataChange(snapshot: DataSnapshot) {
@@ -122,7 +109,6 @@ class SignUpActivity : AppCompatActivity() {
                     Toast.makeText(this@SignUpActivity, "Username Telah digunakan", Toast.LENGTH_SHORT).show()
                 }
             }
-
             override fun onCancelled(error: DatabaseError) {
                 Toast.makeText(this@SignUpActivity, error.message, Toast.LENGTH_SHORT).show()
             }
