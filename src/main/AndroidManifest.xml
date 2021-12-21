@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rohmanbeny.mov">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MOV.noActionBar">
+        <activity
+            android:name=".tiket.TiketActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".home.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".sign.signup.SignUpPhotoScreenActivity"
+            android:exported="true" />
+        <activity
+            android:name=".sign.signin.SignInActivity"
+            android:exported="true" />
+        <activity
+            android:name=".sign.signup.SignUpActivity"
+            android:exported="true" />
+        <activity
+            android:name=".checkout.PilihBangkuActivity"
+            android:exported="true" />
+        <activity
+            android:name=".checkout.CheckOutActivity"
+            android:exported="true" />
+        <activity
+            android:name=".checkout.SuccesBeliActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MyWalletActivity"
+            android:exported="true" />
+        <activity
+            android:name=".HistoryActivity"
+            android:exported="true" />
+        <activity
+            android:name=".onboarding.OnboardingOneActivity"
+            android:exported="true" />
+        <activity
+            android:name=".onboarding.OnboardingTwoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".onboarding.OnboardingTreeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

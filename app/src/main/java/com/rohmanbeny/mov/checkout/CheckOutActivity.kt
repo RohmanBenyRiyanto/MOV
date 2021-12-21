@@ -80,13 +80,13 @@ class CheckOutActivity : AppCompatActivity() {
     }
 
     private fun showNotif(datas: Film) {
-        val NOTIFICATION_CHANNEL_ID = "channel_bwa_notif"
+        val NOTIFICATION_CHANNEL_ID = "channel_mov_notif"
         val context = this.applicationContext
         var notificationManager =
             context.getSystemService(NOTIFICATION_SERVICE) as NotificationManager
 
         if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.O) {
-            val channelName = "BWAMOV Notif Channel"
+            val channelName = "MOV Notif Channel"
             val importance = NotificationManager.IMPORTANCE_HIGH
 
             val mChannel = NotificationChannel(NOTIFICATION_CHANNEL_ID, channelName, importance)
@@ -115,7 +115,7 @@ class CheckOutActivity : AppCompatActivity() {
                     R.drawable.logo_notification
                 )
             )
-            .setTicker("notif bwa starting")
+            .setTicker("notif mov starting")
             .setAutoCancel(true)
             .setVibrate(longArrayOf(1000, 1000, 1000, 1000, 1000))
             .setLights(Color.RED, 3000, 3000)

@@ -60,7 +60,7 @@ class PilihBangkuActivity : AppCompatActivity() {
 
         btn_home.setOnClickListener {
             val intent = Intent (this, CheckOutActivity::class.java)
-                .putExtra("data", datalist)
+                .putExtra("data", datalist).putExtra("datas", data)
             startActivity(intent)
         }
         iv_close.setOnClickListener {

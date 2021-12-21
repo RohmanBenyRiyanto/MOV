@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "448093330088",
+    "firebase_url": "https://beny-mov-3ddbe-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "beny-mov-3ddbe",
+    "storage_bucket": "beny-mov-3ddbe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:448093330088:android:798880e1039e02d4e2409d",
+        "android_client_info": {
+          "package_name": "com.rohmanbeny.mov"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "448093330088-cgrk6bibhp9fgk6cdv0iikc1n2t25dug.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEvYUCCu-rLYbi2i42jRsr3t-r9CNXHDo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "448093330088-cgrk6bibhp9fgk6cdv0iikc1n2t25dug.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

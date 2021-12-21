@@ -23,7 +23,7 @@ class TiketActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tiket)
 
-        var data = intent.getParcelableExtra<Film>("data")
+        val data = intent.getParcelableExtra<Film>("data")
 
         tv_title.text = data!!.judul
         tv_genre.text = data.genre
