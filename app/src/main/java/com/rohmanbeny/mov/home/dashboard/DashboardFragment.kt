@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.google.firebase.database.*
-import com.rohmanbeny.mov.DetailActivity
+import com.rohmanbeny.mov.detail.DetailActivity
 import com.rohmanbeny.mov.R
 import com.rohmanbeny.mov.model.Film
 import com.rohmanbeny.mov.utils.Preferences
@@ -47,6 +47,8 @@ class DashboardFragment : Fragment() {
         tv_nama.setText(preferences.getValues("nama"))
         if (!preferences.getValues("saldo").equals("")){
             curency(preferences.getValues("saldo")!!.toDouble(), tv_saldo)
+        } else {
+            tv_saldo.setText("Duit ane kosong :(")
         }
 
         Glide.with(this)

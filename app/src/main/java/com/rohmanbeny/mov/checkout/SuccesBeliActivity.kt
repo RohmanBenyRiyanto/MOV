@@ -5,6 +5,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.rohmanbeny.mov.R
 import com.rohmanbeny.mov.home.HomeActivity
+import com.rohmanbeny.mov.tiket.TicketFragment
+import com.rohmanbeny.mov.tiket.TiketActivity
 import kotlinx.android.synthetic.main.activity_succes_beli.*
 
 class SuccesBeliActivity : AppCompatActivity() {

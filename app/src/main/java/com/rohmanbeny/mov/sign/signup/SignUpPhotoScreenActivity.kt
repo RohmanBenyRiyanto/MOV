@@ -99,7 +99,7 @@ class SignUpPhotoScreenActivity : AppCompatActivity(), PermissionListener {
                         ref.downloadUrl.addOnSuccessListener {
                             preferences.setValues("url", it.toString())
                         }
-                        var goHome = Intent(this@SignUpPhotoScreenActivity, HomeActivity::class.java)
+                        val goHome = Intent(this@SignUpPhotoScreenActivity, HomeActivity::class.java)
                         startActivity(goHome)
                     }
 
@@ -109,7 +109,7 @@ class SignUpPhotoScreenActivity : AppCompatActivity(), PermissionListener {
                     }
                     .addOnProgressListener {
                         taskSnapshot -> var  progress = 100.0 * taskSnapshot.bytesTransferred / taskSnapshot.totalByteCount
-                        progressDialog.setMessage("Upload"+progress.toInt()+" %")
+                        progressDialog.setMessage("Upload "+progress.toInt()+" %")
                     }
 
             } else {

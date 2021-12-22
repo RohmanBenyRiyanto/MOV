@@ -27,7 +27,9 @@
         <entry key="..\:/Android Studio/MOV/app/src/main/res/drawable/shape_background.xml" value="0.24259259259259258" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/drawable/shape_bulat_yellow.xml" value="0.24259259259259258" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/drawable/shape_line.xml" value="0.23926940639269406" />
+        <entry key="..\:/Android Studio/MOV/app/src/main/res/drawable/shape_line_blue.xml" value="0.27291666666666664" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/drawable/shape_line_grey.xml" value="0.23926940639269406" />
+        <entry key="..\:/Android Studio/MOV/app/src/main/res/drawable/shape_line_white.xml" value="0.27291666666666664" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/drawable/shape_rectangle_black.xml" value="0.23926940639269406" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/drawable/shape_rectangle_black_left.xml" value="0.23926940639269406" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/drawable/shape_rectangle_black_right.xml" value="0.23926940639269406" />
@@ -37,35 +39,38 @@
         <entry key="..\:/Android Studio/MOV/app/src/main/res/drawable/shape_shape_yellow.xml" value="0.24259259259259258" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_checkout.xml" value="0.264" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_checkout2.xml" value="0.17255434782608695" />
-        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_detail.xml" value="0.264" />
-        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_edit_profile.xml" value="0.136" />
-        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_history.xml" value="0.2" />
+        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_detail.xml" value="0.136" />
+        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_edit_profile.xml" value="0.4" />
+        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_history.xml" value="0.136" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_home.xml" value="0.176" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_main.xml" value="0.12916666666666668" />
-        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_my_wallet.xml" value="0.152" />
+        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_my_wallet.xml" value="0.2" />
+        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_my_wallet_top_up.xml" value="0.264" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_on_boarding_one.xml" value="0.12916666666666668" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_on_boarding_one2.xml" value="0.12552083333333333" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_onboarding_one.xml" value="0.152" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_onboarding_tree.xml" value="0.2" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_onboarding_two.xml" value="0.2" />
-        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_pilih_bangku.xml" value="0.2" />
+        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_pilih_bangku.xml" value="0.4" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_sign_in.xml" value="0.2" />
-        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
+        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_sign_up.xml" value="0.12" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_sign_up_photoscreen.xml" value="0.2" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_sign_ups.xml" value="0.22824074074074074" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_splash_screen.xml" value="0.12552083333333333" />
-        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_succes_beli.xml" value="0.152" />
+        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_succes_beli.xml" value="0.176" />
+        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_succes_mywallet.xml" value="0.264" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/activity_tiket.xml" value="0.2" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/column_item_comming_soon.xml" value="0.19701086956521738" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/dialog_qr.xml" value="0.22824074074074074" />
-        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/fragment_dashboard.xml" value="0.21829710144927536" />
+        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/fragment_dashboard.xml" value="0.2" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/fragment_profile.xml" value="0.21574074074074073" />
-        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/fragment_setting.xml" value="0.152" />
-        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/fragment_ticket.xml" value="0.2" />
+        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/fragment_setting.xml" value="0.264" />
+        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/fragment_ticket.xml" value="0.32252085264133457" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/row_item_checkout.xml" value="0.4" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/row_item_checkout_white.xml" value="0.2" />
-        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/row_item_now_playing.xml" value="0.20244565217391305" />
-        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/row_item_play.xml" value="0.17255434782608695" />
+        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/row_item_now_playing.xml" value="0.176" />
+        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/row_item_play.xml" value="0.4" />
+        <entry key="..\:/Android Studio/MOV/app/src/main/res/layout/row_item_transaksi.xml" value="0.72" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.24259259259259258" />
         <entry key="..\:/Android Studio/MOV/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.24259259259259258" />
       </map>

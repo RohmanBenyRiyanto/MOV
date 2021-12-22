@@ -119,11 +119,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
+        android:text="12 Aug, 10 AM"
         android:textColor="@color/colorWhite"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView22"
-        tools:text="12 Aug, 10 AM" />
+        app:layout_constraintTop_toTopOf="@+id/textView22" />
 
     <TextView
         android:id="@+id/textView25"
@@ -131,10 +131,11 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:textColor="@color/colorWhite"
+        android:text="Depok Mall, Cinema 3"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView23"
-        tools:text="Depok Mall, Cinema 3" />
+ />
 
     <TextView
         android:id="@+id/textView26"

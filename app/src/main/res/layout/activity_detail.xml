@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBlack"
-    tools:context=".DetailActivity">
+    tools:context=".detail.DetailActivity">
 
     <ImageView
         android:id="@+id/iv_poster"
@@ -57,6 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
+        android:maxLines="8"
         android:text="The Avengers must stop Thanos, a mad Titan, and his army from getting their hands on all the infinity stones. However, the mad Titan is prepared to go to any lengths to carry out his insane plan."
         android:textColor="@color/colorWhiteGrey"
         app:layout_constraintEnd_toEndOf="parent"

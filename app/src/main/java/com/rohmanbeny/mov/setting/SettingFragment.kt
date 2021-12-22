@@ -9,9 +9,11 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
+import com.rohmanbeny.mov.profile.EditProfileActivity
 import com.rohmanbeny.mov.R
 import com.rohmanbeny.mov.sign.signin.SignInActivity
 import com.rohmanbeny.mov.utils.Preferences
+import com.rohmanbeny.mov.wallet.MyWalletActivity
 import kotlinx.android.synthetic.main.fragment_setting.*
 import kotlinx.android.synthetic.main.fragment_setting.iv_profile
 
@@ -40,6 +42,13 @@ class SettingFragment : Fragment() {
             .apply(RequestOptions.circleCropTransform())
             .into(iv_profile)
 
+        tv_my_wallet.setOnClickListener {
+        startActivity(Intent(activity, MyWalletActivity::class.java))
+        }
+
+        tv_edit_profile.setOnClickListener {
+            startActivity(Intent(activity, EditProfileActivity::class.java))
+        }
 
         btn_keluar.setOnClickListener {
             preferences.clear()
@@ -49,7 +58,8 @@ class SettingFragment : Fragment() {
     }
 
     private fun moveIntent() {
-        startActivity(Intent(context, SignInActivity::class.java))
+        startActivity(Intent(activity, SignInActivity::class.java))
+        activity?.finish()
     }
 
     private fun showMessage(message: String) {

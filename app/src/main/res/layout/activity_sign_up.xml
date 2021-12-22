@@ -59,12 +59,14 @@
         android:backgroundTint="@color/colorWhite"
         android:ems="10"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:textColor="@color/colorWhite"
         android:textColorHint="@color/colorWhiteGrey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/labelusername"
-        tools:text="RohmanBeny"/>
+        tools:ignore="TouchTargetSizeCheck"
+        tools:text="RohmanBeny" />
 
     <TextView
         android:id="@+id/labelPassword"
@@ -88,6 +90,7 @@
         android:backgroundTint="@color/colorWhite"
         android:ems="10"
         android:inputType="textPassword"
+        android:minHeight="48dp"
         android:textColor="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,11 +129,12 @@
         android:backgroundTint="@color/colorWhite"
         android:ems="10"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:textColor="@color/colorWhiteGrey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/labelNama"
-        tools:text="Beny"/>
+        tools:text="Beny" />
 
     <TextView
         android:id="@+id/labelEmail"
@@ -153,7 +157,8 @@
         android:layout_marginEnd="16dp"
         android:backgroundTint="@color/colorWhite"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textPersonName|textEmailSubject"
+        android:minHeight="48dp"
         android:textColor="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

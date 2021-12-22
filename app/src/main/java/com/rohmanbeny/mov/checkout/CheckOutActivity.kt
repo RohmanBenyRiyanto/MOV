@@ -18,6 +18,9 @@ import com.rohmanbeny.mov.model.Film
 import com.rohmanbeny.mov.tiket.TiketActivity
 import com.rohmanbeny.mov.utils.Preferences
 import kotlinx.android.synthetic.main.activity_checkout.*
+import kotlinx.android.synthetic.main.activity_checkout.btn_home
+import kotlinx.android.synthetic.main.activity_checkout.iv_close
+import kotlinx.android.synthetic.main.activity_pilih_bangku.*
 import java.text.NumberFormat
 import java.util.*
 import kotlin.collections.ArrayList
@@ -56,6 +59,9 @@ class CheckOutActivity : AppCompatActivity() {
             }
         }
         btn_home.setOnClickListener {
+            finish()
+        }
+        iv_close.setOnClickListener {
             finish()
         }
 

@@ -82,13 +82,14 @@
         android:backgroundTint="@color/colorWhite"
         android:ems="10"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         android:textColor="@color/colorWhite"
         android:textColorHint="@color/colorWhiteGrey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:text="RohmanBeny"/>/>
+        tools:text="RohmanBeny" />/>
 
     <TextView
         android:id="@+id/textView4"
@@ -112,10 +113,11 @@
         android:backgroundTint="@color/colorWhite"
         android:ems="10"
         android:inputType="textPassword"
+        android:minHeight="48dp"
         android:textColor="@color/colorWhiteGrey"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
-        tools:text="password"/>
+        tools:text="password" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
