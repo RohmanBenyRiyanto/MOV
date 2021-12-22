@@ -1,7 +1,7 @@
 # MOV APPS
 Project Class BWA Full Stack Android Development
 
-### [Download] (https://github.com/RohmanBenyRiyanto/MOV/releases/tag/MOV)
+### [Download](https://github.com/RohmanBenyRiyanto/MOV/releases/tag/MOV)
 Uji coba MOV APPS [Download](https://github.com/RohmanBenyRiyanto/MOV/releases/download/MOV/MOV.v2.apk).
 
 ## Fiture
