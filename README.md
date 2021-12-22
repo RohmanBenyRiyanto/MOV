@@ -4,6 +4,13 @@ Aplikasi Pemesanan Tiket Bioskop
 ### [Download](https://github.com/RohmanBenyRiyanto/MOV/releases/tag/MOV)
 Uji coba [MOV APPS](https://github.com/RohmanBenyRiyanto/MOV/releases/download/MOV/MOV.v2.apk).
 
+### Test on Android
+- android 5.0
+- android 8.0
+- android 9.0
+- android 10.0
+- android 11.0
+
 ## Fiture
 1. SplashScreen
 2. OnBoarding
