@@ -5,11 +5,11 @@ Aplikasi Pemesanan Tiket Bioskop
 Uji coba [MOV APPS](https://github.com/RohmanBenyRiyanto/MOV/releases/download/MOV/MOV.v2.apk).
 
 ### Test on Android
-- android 5.0
-- android 8.0
-- android 9.0
-- android 10.0
-- android 11.0
+- [android 5.0](https://www.android.com/intl/id_id/versions/lollipop-5-0/)
+- [android 8.0](https://www.android.com/versions/oreo-8-0/)
+- [android 9.0](https://www.android.com/versions/pie-9-0/)
+- [android 10.0](https://www.android.com/intl/id_id/android-10/)
+- [android 11.0](https://www.android.com/intl/id_id/android-11/)
 
 ## Fiture
 1. SplashScreen
@@ -41,3 +41,9 @@ Uji coba [MOV APPS](https://github.com/RohmanBenyRiyanto/MOV/releases/download/M
 <img alt="Feature Graphic MOV Apps" src="https://user-images.githubusercontent.com/72520643/133613656-f4522aba-866e-4d5f-8baa-4aea32b53630.png" width="924" height="400" align="center"/>
 
 4. Demo
+<img alt="MOV Apps" src="https://user-images.githubusercontent.com/72520643/147159352-16111dd2-619d-40a8-930d-1d3c39108295.mp4" width="220" height="110" align="center"/>
+
+
+
+
+
