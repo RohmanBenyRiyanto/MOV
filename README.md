@@ -1,8 +1,7 @@
 # MOV APPS
 Project Class BWA Full Stack Android Development
 
-### Download MOV.apk
-https://github.com/RohmanBenyRiyanto/MOV/releases/tag/MOV
+Uji coba MOV APPS [Download](https://github.com/RohmanBenyRiyanto/MOV/releases/tag/MOV).
 
 ## Fiture
 1. SplashScreen
