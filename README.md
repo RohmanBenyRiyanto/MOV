@@ -33,6 +33,4 @@ Uji coba [MOV APPS](https://github.com/RohmanBenyRiyanto/MOV/releases/download/M
 3. Feature
 <img alt="Feature Graphic MOV Apps" src="https://user-images.githubusercontent.com/72520643/133613656-f4522aba-866e-4d5f-8baa-4aea32b53630.png" width="924" height="400" align="center"/>
 
-4. Demo Dashboard
-<img alt="Feature Graphic MOV Apps" src="https://user-images.githubusercontent.com/72520643/133613656-f4522aba-866e-4d5f-8baa-4aea32b53630.png" width="924" height="400" align="center"/>
-
+4. Demo
