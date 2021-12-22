@@ -22,7 +22,7 @@ Uji coba [MOV APPS](https://github.com/RohmanBenyRiyanto/MOV/releases/download/M
 8. Check Out Ticket
 9. Ticket
 10. Ticket Detail
-11. Pop Up QR Code
+11. Pop Up
 12. Setting
 
 ## Tekhnologi
@@ -37,13 +37,10 @@ Uji coba [MOV APPS](https://github.com/RohmanBenyRiyanto/MOV/releases/download/M
 
 <img alt="satu" src="https://user-images.githubusercontent.com/72520643/133615125-720ef6fb-f1a6-499b-9d66-db82dc7585bf.png" width="360" height="641"/> <img alt="dua" src="https://user-images.githubusercontent.com/72520643/133615166-8ada54cc-90d0-42c7-845d-1519fe7da0ad.png" width="360" height="641"/>
 
-3. Feature
+3. Demo
+Click Image
 <img alt="Feature Graphic MOV Apps" src="https://user-images.githubusercontent.com/72520643/133613656-f4522aba-866e-4d5f-8baa-4aea32b53630.png" width="924" height="400" align="center"/>
 
 4. Demo
-<img alt="MOV Apps" src="https://user-images.githubusercontent.com/72520643/147159352-16111dd2-619d-40a8-930d-1d3c39108295.mp4" width="220" height="110" align="center"/>
-
-
-
-
-
+Full video click [Me](https://youtu.be/Y9KETmK2Kis)
+<img alt="Watch the demo" src="https://user-images.githubusercontent.com/72520643/147162993-82963e43-526c-4d67-9824-96cb0f5f6c8a.gif" width="330" align="center"/>
