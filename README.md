@@ -1,5 +1,5 @@
 # MOV APPS
-Project Class BWA Full Stack Android Development
+Aplikasi Pemesanan Tiket Bioskop
 
 ### [Download](https://github.com/RohmanBenyRiyanto/MOV/releases/tag/MOV)
 Uji coba [MOV APPS](https://github.com/RohmanBenyRiyanto/MOV/releases/download/MOV/MOV.v2.apk).
